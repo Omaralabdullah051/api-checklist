@@ -79,10 +79,12 @@ const displayCardDetails = (cards, cardCode) => {
     textContent();
     const div = document.createElement('div');
     div.innerHTML = `
+    <div class="card w-50 mx-auto">
     <img src="${singleCard.image}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${singleCard.suit}</h5>
                 <p class="card-text">${singleCard.value}</p>
+    </div>            
     `;
     container.appendChild(div);
     spinner('none');
